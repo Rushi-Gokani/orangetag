@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html
+  class="no-js ptf-is--about-us ptf-is--header-style-3 ptf-is--footer-style-1 ptf-is--custom-cursor ptf-is--footer-fixed"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>OrangeTag - About Us</title>
+    <meta name="description" content="Multipurpose HTML5 Template" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
+    <!--Framework-->
+    <link
+      rel="stylesheet"
+      href="assets/css/framework/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/framework/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/framework/bootstrap-utilities.min.css"
+    />
+    <!--Plugins-->
+    <link rel="stylesheet" href="assets/css/ptf-plugins.min.css" />
+    <!--Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/CerebriSans/style.css" />
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/LineIcons-PRO/WebFonts/Pro-Light/font-css/LinIconsPro-Light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/LineIcons-PRO/WebFonts/Pro-Regular/font-css/LineIcons.css"
+    />
+    <link rel="stylesheet" href="assets/fonts/Socicons/socicon.css" />
+    <!--Style-->
+    <link rel="stylesheet" href="assets/css/ptf-main.min.css" />
+    <!--Custom-->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+      .customize_nav {
+        color: #060606;
+        position: relative;
+        font-size: 16px;
+        transition: color 0.3s ease;
+        padding-bottom: 10px;
+        font-weight: 500;
+      }
+
+      /* Hover text color */
+      .customize_nav:hover {
+        color: #f57528;
+      }
+
+      /* Dot default state: hidden with opacity 0 and transform */
+      .customize_nav::before {
+        content: "●";
+        color: #f57528;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        font-size: 12px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+
+      /* Show dot on hover or active with smooth animation */
+      .customize_nav:hover::before,
+      .customize_nav.active::before {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+
+      /* Keep text white when active */
+      .customize_nav.active {
+        color: #f57528;
+      }
+      /* Desktop: Hide hamburger and mobile menu */
+      @media (min-width: 992px) {
+        .ptf-offcanvas-menu-icon,
+        .ptf-offcanvas-menu,
+        .ptf-site-overlay {
+          display: none !important;
+        }
+      }
+
+      /* Mobile: Show hamburger menu */
+      @media (max-width: 991px) {
+        .ptf-offcanvas-menu-icon {
+          display: block;
+          cursor: pointer;
+          color: rgb(0, 0, 0);
+          padding-right: 40px;
+        }
+
+        .ptf-offcanvas-menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 300px;
+          height: 100vh;
+          background: #fffdfd;
+          z-index: 1000;
+          transition: right 0.4s ease;
+          overflow-y: auto;
+        }
+
+        .ptf-offcanvas-menu.active {
+          right: 0;
+        }
+
+        .ptf-site-overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: rgb(255, 254, 254);
+          z-index: 999;
+        }
+
+        .ptf-site-overlay.active {
+          display: block;
+        }
+        .customize_nav1 {
+          color: #000000;
+          position: relative;
+          font-size: 16px;
+          transition: color 0.3s ease;
+          padding-bottom: 10px;
+          font-weight: 500;
+        }
+        .customize_nav1:hover {
+          color: #f57528;
+        }
+      }
+      .mask {
+        position: absolute;
+        top: 500;
+        left: 0;
+        z-index: 1;
+        width: 600px;
+        height: 700px;
+      }
+
+      /* For mobile devices (example max-width 767px) */
+      @media (max-width: 767px) {
+        .mask {
+          width: 400px; /* optional: adjust width too if needed */
+          height: 550px; /* your mobile height */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Site Wrapper-->
+    <div class="ptf-site-wrapper animsition">
+      <!--Site Wrapper Inner-->
+      <div class="ptf-site-wrapper__inner">
+        <!--Header-->
+        <header class="ptf-header ptf-header--style-3" style="padding: 0">
+          <div
+            class="ptf-navbar ptf-navbar--main ptf-navbar--sticky"
+            style="background-color: white"
+          >
+            <div
+              class="container-xxl"
+              style="padding-left: 0%; padding-right: 0%"
+            >
+              <div class="ptf-navbar-inner">
+                <!--Logo--><a class="ptf-navbar-logo" href="index.html"
+                  ><img
+                    class="black"
+                    src="assets/img/logo/1.png"
+                    alt=""
+                    loading="lazy"
+                    width="150"
+                    height="50"
+                    style="padding-top: 18px; padding-left: 20px" /><img
+                    class="white"
+                    src="assets/img/logo/1.png"
+                    alt=""
+                    loading="lazy"
+                /></a>
+                <!--Navigation-->
+                <nav class="ptf-nav ptf-nav--default">
+                  <!--Menu-->
+                  <ul class="sf-menu">
+                    <li class="" style="height: 20px">
+                      <a href="index.html"
+                        ><span class="customize_nav">Home</span></a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="about-us.html"
+                        ><span class="customize_nav active">About us</span></a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        href="https://drive.google.com/file/d/1hTgZ_TA__5TaoWZq0baJspv7VLNr3pbu/view?usp=sharing"
+                        target="_blank"
+                        ><span class="customize_nav">Portfolio</span></a
+                      >
+                    </li>
+                    <li class="menu-item-has-children two-columns">
+                      <a href="why1.html"
+                        ><span class="customize_nav"
+                          >Why Orange Tag Media?</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!--Buttons-->
+                <!--Navbar Search-->
+                <!--Offcanvas Menu Toggle-->
+                <a
+                  class="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"
+                  href="#"
+                  ><i class="lnir lnir-menu-alt-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--Site Overlay-->
+        <div class="ptf-site-overlay"></div>
+        <!--Offcanvas Menu-->
+        <div class="ptf-offcanvas-menu">
+          <div class="ptf-offcanvas-menu__header">
+            <a class="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle" href="#"
+              ><i class="lnir lnir-close"></i
+            ></a>
+          </div>
+          <div class="ptf-offcanvas-menu__navigation">
+            <!--Navigation-->
+            <nav class="ptf-nav ptf-nav--offcanvas">
+              <!--Menu-->
+              <ul class="sf-menu">
+                <li
+                  class="menu-item-has-children two-columns"
+                  style="height: 30px; margin-bottom: 15px"
+                >
+                  <a href="index.html"
+                    ><span class="customize_nav1">Home</span></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="about-us.html"
+                    ><span class="customize_nav1">About us</span></a
+                  >
+                </li>
+                <li class="menu-item-has-children">
+                  <a
+                    href="https://drive.google.com/file/d/1hTgZ_TA__5TaoWZq0baJspv7VLNr3pbu/view?usp=sharing"
+                    ><span class="customize_nav1">Portfolio</span></a
+                  >
+                </li>
+                <li class="menu-item-has-children two-columns">
+                  <a href="why1.html"
+                    ><span class="customize_nav1"
+                      >Why Orange Tag Media?</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="ptf-offcanvas-menu__footer">
+            <p class="ptf-offcanvas-menu__copyright">
+              © 2025 <span style="color: #f57528">OrangeTag</span>. All Rights
+              Reserved.
+            </p>
+            <div class="ptf-offcanvas-menu__socials">
+              <!--Social Icon--><a
+                class="ptf-social-icon ptf-social-icon--style-3 linkedin"
+                href="https://in.linkedin.com/company/orangetag-media"
+                target="_blank"
+                ><i class="socicon-linkedin"></i
+              ></a>
+              <!--Social Icon--><a
+                class="ptf-social-icon ptf-social-icon--style-3 facebook"
+                href="https://www.facebook.com/orangetag.media"
+                target="_blank"
+                ><i class="socicon-facebook"></i
+              ></a>
+              <!--Social Icon--><a
+                class="ptf-social-icon ptf-social-icon--style-3 instagram"
+                href="https://www.instagram.com/orangetag.agency/"
+                target="_blank"
+                ><i class="socicon-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--Main-->
+        <main class="ptf-main">
+          <article class="ptf-page ptf-page--about-us">
+            <section>
+              <!--Spacer-->
+              <div
+                class="ptf-spacer"
+                style="--ptf-xxl: 12rem; --ptf-md: 12rem"
+              ></div>
+              <div class="container-xxl">
+                <div class="row align-items-center">
+                  <div class="col-xl-6">
+                    <!--Animated Block-->
+                    <div
+                      class="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="0"
+                    >
+                      <h1 class="h2">Orange Tag</h1>
+                    </div>
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style="--ptf-xxl: 2.8125rem"></div>
+                    <!--Animated Block-->
+                    <div
+                      class="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="100"
+                    ></div>
+                    <!--Spacer-->
+
+                    <div class="row">
+                      <div class="col-xl-8">
+                        <div style="max-width: 29.6875rem">
+                          <!--Animated Block-->
+                          <div
+                            class="ptf-animated-block"
+                            data-aos="fade"
+                            data-aos-delay="200"
+                          >
+                            <!--Divider-->
+                            <div class="ptf-divider"></div>
+                            <!--Spacer-->
+                            <div
+                              class="ptf-spacer"
+                              style="--ptf-xxl: 4.375rem; --ptf-md: 2.1875rem"
+                            ></div>
+                            <p class="fz-24 text-justify">
+                              OrangeTag Media is a full-stack social media
+                              agency dedicated to elevating your brand's online
+                              presence. We understand that in the fast-paced
+                              world of social media, capturing your audience's
+                              attention is an art. With a team of creative
+                              minds, tech enthusiasts, and digital strategists,
+                              we've mastered the art of creating content that
+                              not only stops the scroll but sparks
+                              conversations, builds communities, and drives
+                              results.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style="--ptf-xl: 5.625rem"></div>
+                    <!--Animated Block-->
+                    <div
+                      class="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="300"
+                    >
+                      <div class="text-center">
+                        <div>
+                          <!-- First image (mask) as background -->
+                          <img
+                            src="assets/img/root/about-us/mask-Photoroom.png "
+                            alt="Mask"
+                            loading="lazy"
+                            class="mask"
+                          />
+
+                          <!-- Second image (main layer) -->
+                          <img
+                            src="assets/img/mask/mask.jpg"
+                            alt="Main Layer"
+                            loading="lazy"
+                            style="
+                              position: relative;
+                              z-index: 2;
+                              width: 500px;
+                              height: auto;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Spacer-->
+              <div
+                class="ptf-spacer"
+                style="--ptf-xxl: 10rem; --ptf-md: 5rem"
+              ></div>
+            </section>
+            <section>
+              <div class="container-xxl">
+                <!--Divider-->
+                <div class="ptf-divider"></div>
+              </div>
+            </section>
+            <!--Footer-->
+            <footer class="ptf-footer ptf-footer--style-1">
+              <div class="container-xxl">
+                <div
+                  class="ptf-footer__top"
+                  style="
+                    padding-bottom: 0px;
+                    padding-top: 35px;
+                    margin-top: 20px;
+                  "
+                >
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                      <!--Animated Block-->
+                      <div
+                        class="ptf-animated-block"
+                        data-aos="fade"
+                        data-aos-delay="0"
+                      >
+                        <a href="index.html"
+                          ><img
+                            class="black"
+                            src="assets/img/favicon/favicon1.png"
+                            alt=""
+                            loading="lazy"
+                            width="50"
+                            height="0"
+                            style="padding-left: -20px"
+                          />
+                        </a>
+                        <div
+                          class="ptf-footer-heading has-black-color"
+                          style="max-width: 37.5rem"
+                        >
+                          Join us on a journey of crafting engaging, lasting
+                          content—together.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                      <!--Animated Block-->
+                      <div
+                        class="ptf-animated-block"
+                        data-aos="fade"
+                        data-aos-delay="200"
+                      >
+                        <div
+                          class="ptf-widget ptf-widget-text"
+                          style="padding-top: 10px"
+                        >
+                          <h4 class="ptf-widget-title">Let’s Talk!</h4>
+                          <p class="fz-23">
+                            OrangeTag Media LLP
+                            <br />
+                            1304-09, 13th floor, D block, Sun Central Place, Nr.
+                            Bopal Crossroad, SP Ring Road, Ambli, Ahmedabad
+                            380058
+
+                            <a
+                              class="fz-40 has-black-color"
+                              href="mailto:mail@orangetag.net"
+                              >mail@orangetag.net</a
+                            >
+                          </p>
+                          <div class="ptf-footer-socials has-black-color">
+                            <a
+                              class="ptf-social-icon ptf-social-icon--style-1 whatsapp"
+                              href="https://wa.me/919725425258"
+                              target="_blank"
+                              ><i
+                                class="socicon-whatsapp"
+                                href="https://wa.me/919725425258"
+                              >
+                              </i
+                            ></a>
+                            <a
+                              style="margin-left: 10px"
+                              class="ptf-social-icon ptf-social-icon--style-1 whatsapp"
+                              href="https://wa.me/919725425258"
+                              target="_blank"
+                              >+91 97254 25258</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ptf-footer__bottom"
+                  style="
+                    padding-bottom: 0px;
+                    padding-top: 3px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <div
+                    class="row align-items-center"
+                    style="margin-bottom: 0px"
+                  >
+                    <div
+                      class="col-12 col-md text-center text-md-center"
+                      style="padding-left: 0; margin-bottom: 0px"
+                    >
+                      <p
+                        class="ptf-footer-copyright has-black-color"
+                        style="margin-bottom: 0px"
+                      >
+                        © 2025 <span>OrangeTag</span>. All Rights Reserved.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md d-none d-xl-block"></div>
+                    <div
+                      class="col-12 col-lg text-center text-md-center"
+                      style="margin-bottom: 0px"
+                    >
+                      <div class="ptf-footer-socials has-black-color">
+                        <!--Social Icon--><a
+                          class="ptf-social-icon ptf-social-icon--style-1 linkedin"
+                          href="https://www.linkedin.com/company/orange-tag-media-pvt-ltd/"
+                          target="_blank"
+                          ><i
+                            class="socicon-linkedin"
+                            href="https://www.linkedin.com/company/orange-tag-media-pvt-ltd/"
+                          ></i
+                        ></a>
+                        <!--Social Icon--><a
+                          class="ptf-social-icon ptf-social-icon--style-1 facebook"
+                          href="https://www.facebook.com/orangetag.media"
+                          target="_blank"
+                          ><i class="socicon-facebook"></i
+                        ></a>
+                        <!--Social Icon--><a
+                          class="ptf-social-icon ptf-social-icon--style-1 instagram"
+                          href="https://www.instagram.com/orangetag.agency/"
+                          target="_blank"
+                          ><i class="socicon-instagram"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </article>
+        </main>
+      </div>
+    </div>
+    <!--Libs-->
+    <script src="assets/scripts/ptf-plugins.min.js"></script>
+    <script src="assets/scripts/ptf-helpers.js"></script>
+    <script src="assets/scripts/ptf-controllers.min.js"></script>
+    <script>
+      const menuToggle = document.querySelectorAll(".js-offcanvas-menu-toggle");
+      const offcanvasMenu = document.querySelector(".ptf-offcanvas-menu");
+      const siteOverlay = document.querySelector(".ptf-site-overlay");
+
+      menuToggle.forEach((toggle) => {
+        toggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          offcanvasMenu.classList.toggle("active");
+          siteOverlay.classList.toggle("active");
+        });
+      });
+
+      // Optional: click overlay to close
+      siteOverlay.addEventListener("click", () => {
+        offcanvasMenu.classList.remove("active");
+        siteOverlay.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

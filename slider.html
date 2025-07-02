@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Grid Product Card Slider</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .slider-container {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      /* The slider track: the row that slides */
+      #slider-track {
+        display: flex;
+        transition: transform 0.4s ease;
+        will-change: transform;
+        /* prevent wrapping */
+        flex-wrap: nowrap;
+      }
+
+      /* Your product cards use bootstrap col classes, so ensure no shrink */
+      .product-card {
+        flex: 0 0 auto; /* prevent shrinking */
+        padding: 0 10px; /* gutter simulation */
+      }
+
+      /* Navigation buttons */
+      .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        user-select: none;
+      }
+
+      .nav-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+
+      /* Hide scrollbar for the slider container if overflow */
+      .slider-container::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <button class="nav-btn prev" id="prev">&#10094;</button>
+      <button class="nav-btn next" id="next">&#10095;</button>
+
+      <div class="row" id="slider-track">
+        <!-- Sample product cards, keep your markup here -->
+        <div class="col-6 col-md-3 col-lg-2 product-card">
+          <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+            <a href="https://www.instagram.com/079stories/" target="_blank">
+              <div
+                class="ptf-partner-box"
+                style="
+                  --ptf-hover-background: #fcf8f4;
+                  --ptf-image-height: 85px;
+                "
+              >
+                <div class="ptf-partner-box__image">
+                  <img
+                    src="https://picsum.photos/id/101/85/85"
+                    alt="079 Stories"
+                    loading="lazy"
+                  />
+                </div>
+                <h6 class="ptf-partner-box__title">079 Stories</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 product-card">
+          <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
+            <a
+              href="https://www.instagram.com/bodhibeverlyhills/"
+              target="_blank"
+            >
+              <div
+                class="ptf-partner-box"
+                style="
+                  --ptf-hover-background: #f3f7fc;
+                  --ptf-image-height: 78px;
+                "
+              >
+                <div class="ptf-partner-box__image">
+                  <img
+                    src="https://picsum.photos/id/102/78/78"
+                    alt="Bodhi"
+                    loading="lazy"
+                  />
+                </div>
+                <h6 class="ptf-partner-box__title">Bodhi</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Repeat as many cards as you want -->
+        <div class="col-6 col-md-3 col-lg-2 product-card">
+          <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
+            <a
+              href="https://www.instagram.com/bodhibeverlyhills/"
+              target="_blank"
+            >
+              <div
+                class="ptf-partner-box"
+                style="
+                  --ptf-hover-background: #f3f7fc;
+                  --ptf-image-height: 78px;
+                "
+              >
+                <div class="ptf-partner-box__image">
+                  <img
+                    src="https://picsum.photos/id/103/78/78"
+                    alt="Bodhi"
+                    loading="lazy"
+                  />
+                </div>
+                <h6 class="ptf-partner-box__title">Bodhi</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 product-card">
+          <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
+            <a
+              href="https://www.instagram.com/bodhibeverlyhills/"
+              target="_blank"
+            >
+              <div
+                class="ptf-partner-box"
+                style="
+                  --ptf-hover-background: #f3f7fc;
+                  --ptf-image-height: 78px;
+                "
+              >
+                <div class="ptf-partner-box__image">
+                  <img
+                    src="https://picsum.photos/id/104/78/78"
+                    alt="Bodhi"
+                    loading="lazy"
+                  />
+                </div>
+                <h6 class="ptf-partner-box__title">Bodhi</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 product-card">
+          <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
+            <a
+              href="https://www.instagram.com/bodhibeverlyhills/"
+              target="_blank"
+            >
+              <div
+                class="ptf-partner-box"
+                style="
+                  --ptf-hover-background: #f3f7fc;
+                  --ptf-image-height: 78px;
+                "
+              >
+                <div class="ptf-partner-box__image">
+                  <img
+                    src="https://picsum.photos/id/105/78/78"
+                    alt="Bodhi"
+                    loading="lazy"
+                  />
+                </div>
+                <h6 class="ptf-partner-box__title">Bodhi</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 product-card">
+          <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
+            <a
+              href="https://www.instagram.com/bodhibeverlyhills/"
+              target="_blank"
+            >
+              <div
+                class="ptf-partner-box"
+                style="
+                  --ptf-hover-background: #f3f7fc;
+                  --ptf-image-height: 78px;
+                "
+              >
+                <div class="ptf-partner-box__image">
+                  <img
+                    src="https://picsum.photos/id/106/78/78"
+                    alt="Bodhi"
+                    loading="lazy"
+                  />
+                </div>
+                <h6 class="ptf-partner-box__title">Bodhi</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sliderTrack = document.getElementById("slider-track");
+      const cards = document.querySelectorAll(".product-card");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+
+      let currentIndex = 0;
+
+      function cardsPerView() {
+        const w = window.innerWidth;
+        if (w < 576) return 2; // col-6 = 2 per row (on xs)
+        if (w < 768) return 3; // approx col-md-3
+        if (w < 992) return 4; // near col-lg-2 would be 6 but we limit here
+        return 6; // large screens
+      }
+
+      function maxIndex() {
+        return cards.length - cardsPerView();
+      }
+
+      function updateSlider() {
+        // Get width of one card (including horizontal padding)
+        const cardWidth = cards[0].offsetWidth + 20; // 20 is approx left+right padding/margin
+        // Calculate translateX
+        let moveX = cardWidth * currentIndex;
+
+        // Clamp moveX so it doesn't scroll beyond last card
+        const maxMove = cardWidth * maxIndex();
+        if (moveX > maxMove) moveX = maxMove;
+        if (moveX < 0) moveX = 0;
+
+        sliderTrack.style.transform = `translateX(-${moveX}px)`;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex--;
+        if (currentIndex < 0) currentIndex = 0;
+        updateSlider();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex > maxIndex()) currentIndex = maxIndex();
+        updateSlider();
+      });
+
+      window.addEventListener("resize", () => {
+        if (currentIndex > maxIndex()) currentIndex = maxIndex();
+        updateSlider();
+      });
+
+      // Initialize slider position
+      updateSlider();
+    </script>
+  </body>
+</html>
